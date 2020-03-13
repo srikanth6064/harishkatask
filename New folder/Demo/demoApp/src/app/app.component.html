@@ -1,0 +1,21 @@
+<table border="1"
+                    cellpadding="10px"
+                    cellspacing="10px"
+                    align="center">
+                  <thead style="background-color:'grey'">
+                      <tr>
+                          <th>SNO</th>
+                          <th>ID</th>
+                          <th>NAME</th>
+                          <th>COST</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr *ngFor="let x of result;let i=index">
+                          <td>{{i+1}}</td>
+                          <td>{{x.p_id}}</td>
+                          <td>{{x.p_name}}</td>
+                          <td>{{x.p_cost}}</td>
+                      </tr>
+                  </tbody>
+</table>
